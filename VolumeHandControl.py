@@ -51,7 +51,7 @@ while True:
      cv2.rectangle(image, (50, int(volBar)), (85, 450), (0, 255, 0), cv2.FILLED)
      volume.SetMasterVolumeLevel(vol, None)
 
-     volumeConvert = np.interp(volume.GetMasterVolumeLevel(), (minVolume, maxVolume), (50, 250))
+     volumeConvert = np.interp(volume.GetMasterVolumeLevel(), (minVolume, maxVolume), (0, 100))
      cv2.putText(image, f'{int(volumeConvert)} %',(50, 485), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
 
