@@ -54,7 +54,7 @@ class FaceMeshRenderer:
 
 
 def main():
-    capture = cv2.VideoCapture("poseVideos/pose2.mp4")
+    capture = cv2.VideoCapture(0)
     pTime = 0
     detector = FaceMeshRenderer()
     while True:
